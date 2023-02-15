@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Pranjal Nahata - XR Developer</title>
+  <meta name="title" content="Pranjal Nahata - XR Developer">
+  <meta name="description" content="Pranjal's XR Portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./Pranjal Nahata Favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/Pranjal Nahata (2).png">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-dark.svg" width="100" height="37" alt="Pranjal home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="100" height="37" alt="Pranjal home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#aboutSection" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Clientele</a>
+          </li>
+
+          <li>
+            <a href="#contactSection" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:pranjalnahata07@gmail.com" class="contact-link">pranjalnahata07@gmail.com</a>
+
+          <a href="tel:+919821065201" class="contact-link">+919821065201</a>
+        </div>
+
+        <ul class="social-list">
+
+          <!-- <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.facebook.com/pranjalnahata07/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.instagram.com/pranjalnahata/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/919821065201" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+      <section id="aboutSection" class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <!-- <h2 class="h2 section-title">Pranjal's Portfolio</h2> -->
+
+              <!-- <p class="section-text">
+                Instagram and Facebook AR Effects, Snapchat Lenses, WebAR Deployments.
+              </p> -->
+            </div>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li data-reveal="bottom">
+              <div class="about-card">
+
+                <video class="roundedVideo" id="video1" crossorigin="anonymous" preload="auto" loop autoplay="true" 
+                src="https://youtube.com/shorts/DidqyBtX6q4?feature=share" playsinline muted></video>
+
+                <h3 href="" class="h4 card-title">Big Billion Days</h3>
+                <h4 class="h4 card-title">by Flipkart</h4>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+
+                <video class="roundedVideo" id="video2" crossorigin="anonymous" preload="auto" loop autoplay="true" 
+                src="./assets/videos/Sugar Cosmetics - Wheel Of Love Demo.mp4" playsinline muted></video>
+
+                <h3 class="h4 card-title"><a href="https://www.instagram.com/ar/3187726861552185/" target="_blank"><u>Wheel Of Love</u></a></h3>
+                <h4 class="h4 card-title">by Sugar Cosmetics</h4>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+
+                <video class="roundedVideo" id="video3" crossorigin="anonymous" preload="auto" loop autoplay="true" 
+                src="./assets/videos/XDG Mumbai - XDG Unlock July Demo.mp4" playsinline muted></video>
+
+                <h3 class="h4 card-title">XDG Unlock July</h3>
+                <h4 class="h4 card-title">by XDG Mumbai</h4>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
+
+                <video class="roundedVideo" id="video4" crossorigin="anonymous" preload="auto" loop autoplay="true" 
+                src="./assets/videos/Marks _ Spencer - M_S Festive Lights Demo.mp4" playsinline muted></video>
+
+                <h3 class="h4 card-title">M&S Festive Lights</h3>
+                <h4 class="h4 card-title">by Marks & Spencer</h4>
+
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © 2023 Pranjal Nahata. All rights reserved.
+      </p>
+
+      <ul class="social-list">
+
+          <!-- <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.facebook.com/pranjalnahata07/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li> -->
+
+          <li>
+            <a href="https://www.instagram.com/pranjalnahata/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/919821065201" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
