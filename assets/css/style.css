@@ -378,8 +378,8 @@ body.nav-active { overflow: hidden; }
 }
 
 .hero-banner .w-100 {
-  mask-image: url("../images/Blob.svg");
-  -webkit-mask-image: url("../images/Blog.svg");
+  mask-image: url("https://daz0g5pwoxvbd.cloudfront.net/assets/blob.svg");
+  -webkit-mask-image: url("https://daz0g5pwoxvbd.cloudfront.net/assets/Blog.svg");
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
