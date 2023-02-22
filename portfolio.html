@@ -968,19 +968,6 @@
               </div>
             </li>
 
-            <!-- Amisha - Bombshell -->
-            <li>
-              <div class="about-card">
-
-                <video class="roundedVideo" crossorigin="anonymous" preload="auto" loop autoplay="true" 
-                src="https://daz0g5pwoxvbd.cloudfront.net/videos/Amisha - Bombshell Demo.mp4" playsinline muted></video>
-
-                <h3 class="h4 card-title">Bombshell</h3>
-                <h4 class="h5">by Amisha</h4>
-
-              </div>
-            </li>
-
             <!--  -->
             <!-- <li>
               <div class="about-card">
@@ -1061,6 +1048,36 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
+  <script>
+    var videos = document.getElementsByTagName("video");
+
+    function checkScroll() {
+      var fraction = 0.8; // Play when 80% of the player is visible.
+
+      for(var i = 0; i < videos.length; i++) {
+        var video = videos[i];
+
+        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+          b = y + h, //bottom
+          visibleX, visibleY, visible;
+
+          visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+          visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+          visible = visibleX * visibleY / (w * h);
+
+          if (visible > fraction) {
+            video.play();
+          } else {
+            video.pause();
+          }
+      }
+    }
+
+    window.addEventListener('scroll', checkScroll, false);
+    window.addEventListener('resize', checkScroll, false);
+  </script>
 
   <!-- 
     - ionicon link

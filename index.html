@@ -25,6 +25,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+
   <!-- 
     - custom css link
   -->
@@ -78,7 +82,7 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Clientele</a>
+            <a href="#clienteleSection" class="navbar-link">Clientele</a>
           </li>
 
           <li>
@@ -531,6 +535,55 @@
 
 
 
+      <!-- 
+        - #CLIENTELE
+      -->
+
+      <section id="clienteleSection" class="section clientele" aria-label="clientele">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+  
+            <div>
+              <h2 class="h2 section-title" id="project-label">Clientele</h2>
+  
+              <p class="section-text">
+                Let's add your brands logo in there too :)
+              </p>
+            </div>
+  
+          </div>
+
+          <div class="row">
+            <div class="container">
+              <section class="customer-logos slider">
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <section class="customer-logos slider">
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+                <div class="slide"><img src="./assets/images/Sugar Logo.png"></div>
+              </section>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
 
       <!-- 
@@ -646,6 +699,30 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript">
+		$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 3
+					}
+				}]
+			});
+		});
+	</script>
 
 </body>
 
